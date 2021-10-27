@@ -1,0 +1,188 @@
+/* Journey to the Center of the Earth Praticum */
+/* Paola Ayala Zelaya */
+
+/* Credit for :lang(): https://www.w3.org/International/questions/qa-css-lang */
+
+/* Credit for h2: https://stackoverflow.com/questions/36666795/how-do-i-make-text-decoration
+-underline-extend-for-the-maximum-width-of-the-page/36666906 */
+
+
+    :lang(fr) {
+        font-style: italic;
+    }
+
+    :lang(is) {
+        font-style: italic;
+    }
+
+    :lang(it) {
+        font-style: italic;
+    }
+
+    :lang(id) {
+        font-style: italic;
+    }
+
+    .character {
+        font-weight: bold;
+    }
+
+    h2 { 
+        border-bottom: 1px dashed black;
+        padding-bottom: 7px;
+        line-height: 12px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #A52A2A;
+    }
+
+    body {
+        background-image: linear-gradient(#765729, #000000);
+    }
+
+    header {
+        margin: 3px;
+        padding: 20px;
+        border: 2px solid #886644;
+        box-shadow: inset 9px 9px 9px 9px rgba(0, 0, 0, 0.9);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-image: url(/img/cave.jpg);
+        background-size: 100%;
+        background-position: 100%;
+    }
+    
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        text-shadow: 4px 4px 5px black;
+        text-align: center;
+    }
+
+    nav {
+        margin: 3px;
+        padding: 15px;
+        border: 2px solid #886644;
+        box-shadow: inset 7px 7px 10px 8px rgb(128, 128, 128);
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    nav ul { 
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        border-left: 1px double black;
+        border-left-width: 3px;
+    }
+
+    nav ul li:first-child {
+        border-left: none;
+    }
+
+    main {
+        margin: 2px;
+        padding: 20px;
+        border: 2px solid #886644;
+        box-shadow: inset 7px 7px 10px 8px rgb(128,128,128);
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    main p:first-of-type::first-line {
+        font-size: 25px;
+    }
+
+    #cover {
+        float: left;
+        max-width: 50%;
+        height: auto;
+        margin: 20px;
+    }
+
+    #cryptogram img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+    }
+    
+    aside {
+        margin: 2px;
+        padding: 17px;
+        border: 2px solid #886644;
+        box-shadow: inset 7px 7px 10px 8px rgb(128,128,128);
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .submission {
+        border: 1px solid black;
+        border-spacing: 0px 5px;
+        background-color:gainsboro;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .opinion { 
+        text-align: center;
+    }
+
+    .signature {
+        font-style: italic;
+        text-align: right;
+    }
+
+    footer {
+        margin: 2px;
+        padding: 20px;
+        border: 2px solid #886644;
+        box-shadow: inset 7px 7px 10px 8px rgb(128,128,128);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+    }
+
+/* Tablet Screen Size */
+@media screen and (min-width: 786px) {
+
+    h1 {
+        font-size-adjust: 40px;
+    }
+
+    .submission {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop Screen Size */
+@media screen and (min-width: 1024px) {
+    
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+
+    .submission {
+        float: right;
+    }
+
+
+}
