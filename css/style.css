@@ -60,7 +60,7 @@
         background-position: 100%;
     }
     
-    header h1 {
+    h1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: bold;
         font-size: 30px;
@@ -157,3 +157,15 @@
         text-align: center;
     }
 
+/* Tablet Screen Size */
+@media screen and (min-width: 786px) {
+
+    h1 {
+        font-size-adjust: 40px;
+    }
+
+    .submission {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
