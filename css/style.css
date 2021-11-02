@@ -161,10 +161,15 @@
 @media screen and (min-width: 786px) {
 
     h1 {
-        font-size-adjust: 40px;
+        font-size: 50px;
     }
 
-    .submission {
+    aside h2 {
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    aside {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
