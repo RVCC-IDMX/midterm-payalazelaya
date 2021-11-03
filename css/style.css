@@ -173,16 +173,28 @@
 /* Desktop Screen Size */
 @media screen and (min-width: 1024px) {
     
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
+    header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
+    body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: auto;
+    }
 
     .submission {
         float: right;
     }
 
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 
 }
